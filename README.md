@@ -42,7 +42,7 @@ Following is the screenshot of the application. 📷
 
 ![main page screenshot](./images/main-page.png)
 
-![feedback page screenshot](./images/feedback-page.png.png)
+![feedback page screenshot](./images/feedback-page.png)
 
 ## <a name="contributing"></a>Contribution 🤝
 
@@ -82,3 +82,4 @@ You can view my projects by going through my GitHub profile at [https://github.c
 
 ## <a name="link"></a>Deployed Application 🚀
 
+[https://ux-ui-tips-c8580539137a.herokuapp.com/](https://ux-ui-tips-c8580539137a.herokuapp.com/)
