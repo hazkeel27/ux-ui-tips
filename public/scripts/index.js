@@ -87,7 +87,7 @@ const validateTip = (newTip) => {
   // Bool value if the username is valid
   const utest = username.length >= 4;
   if (!utest) {
-    errorState.username = 'Invalid username!';
+    errorState.username = 'Invalid username! Must be greater than 4 characters';
   }
 
   // Bool value to see if the tip being added is at least 15 characters long
@@ -97,8 +97,7 @@ const validateTip = (newTip) => {
   }
 
   // Bool value to see if the topic is either UX or UI
-  const topicCheck = topic.includes('UX' || 'UI');
-  if (!topicCheck) {
+  if (topic !== 'UX' && topic !== 'UI') {
     errorState.topic = 'Topic not relevant to UX or UI';
   }
 
@@ -123,7 +122,6 @@ const showErrors = (errorObj) => {
 
 // Helper function to send a POST request to the diagnostics route (/api/diagnostics)
 const submitDiagnostics = (submissionObj) => {
-  // TODO: your code here
   fetch('/api/diagnostics', {
     method: 'POST',
     headers: {
@@ -154,7 +152,7 @@ const handleFormSubmit = (e) => {
   // Create an object with the tip and username
   const newTip = {
     username: tipUsername,
-    topic: 'UX',
+    topic: "UI",
     tip: tipContent,
   };
 

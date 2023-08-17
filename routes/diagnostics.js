@@ -11,7 +11,7 @@ diagnostics.get('/', (req, res) => {
 // POST Route for a error logging
 diagnostics.post('/', (req, res) => {
   // TODO: Logic for appending data to the db/diagnostics.json file
-  const {username, topic, tip} = req.body.errors;
+  const {username, tip, topic} = req.body.errors;
 
   const unixTimestamp = new Date().getTime();
 
@@ -20,9 +20,9 @@ diagnostics.post('/', (req, res) => {
       time: unixTimestamp,
       error_id: uuidv4(),
       errors: {
+        username,
         tip,
         topic,
-        username,
       }
     };
   

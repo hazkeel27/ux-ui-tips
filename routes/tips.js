@@ -16,8 +16,8 @@ tips.post('/', (req, res) => {
   if (req.body) {
     const newTip = {
       username,
-      tip,
       topic,
+      tip,
       tip_id: uuidv4(),
     };
 

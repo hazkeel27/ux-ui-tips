@@ -16,5 +16,17 @@
         "tip": "Don't use three different fonts on the same page",
         "topic": "UX",
         "tip_id": "c83c28af-9197-4f2f-b119-03236ecfc0b6"
+    },
+    {
+        "username": "bobby",
+        "topic": "UX",
+        "tip": "Use light background colour and dark font colour",
+        "tip_id": "088d5b50-2008-49d5-a40b-d7a1acfd134b"
+    },
+    {
+        "username": "garfield",
+        "topic": "UX",
+        "tip": "Use classes instead of objects",
+        "tip_id": "c63fe288-5201-4292-a17c-333d0f47f9b7"
     }
 ]
